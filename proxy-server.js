@@ -23,5 +23,7 @@ app.get("/api/instagram/:username", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Proxy server running at http://localhost:${port}`);
+  console.log(
+    `Proxy server running at https://instagramanalyzer-production.up.railway.app:${port}`
+  );
 });
