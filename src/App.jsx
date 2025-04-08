@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css'; // Importing the CSS file
 
 function App() {
   const [username, setUsername] = useState('');
@@ -25,8 +26,10 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial', maxWidth: '600px', margin: 'auto' }}>
-      <h1>InstaAnalyzer</h1>
+    
+    <div className='hehede' style={{ padding: '20px', maxWidth: '600px', margin: 'auto' }}>
+
+
       <div style={{ marginBottom: '10px' }}>
         <input
           type="text"
@@ -47,7 +50,7 @@ function App() {
       </div>
 
       {data && (
-        <div style={{ marginTop: '30px', borderTop: '1px solid #ccc', paddingTop: '20px' }}>
+        <div className='deting' style={{ marginTop: '30px', borderTop: '1px solid #ccc', paddingTop: '20px' }}>
           <h2>Results for @{data.id.username}</h2>
           <p><strong>Name:</strong> {data.id.display_name}</p>
           <p><strong>Followers:</strong> {data.statistics.total.followers.toLocaleString()}</p>
@@ -62,7 +65,7 @@ function App() {
           <p><strong>Growth (Last 365 Days):</strong> {data.statistics.growth.followers[365]} followers</p>
           
           <h3>Daily Stats:</h3>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+          <div className='dede' >
             {data.daily.map((entry, index) => (
               <div
                 key={index}

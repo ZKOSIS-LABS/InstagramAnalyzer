@@ -1,0 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/neogrey-medium');
+.app-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    font-family: 'Neogrey Medium', sans-serif !important;
+}
+
+.deting {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+div.dede {
+    color: black;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
